@@ -1,6 +1,7 @@
 ﻿apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+  - namespace.yaml
   - ../../infrastructure/ingress-nginx/overlays/dev
   - ../../apps/frontend/overlays/dev
   - ../../apps/backend/overlays/dev
